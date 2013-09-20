@@ -28,7 +28,7 @@
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
+  <body>	
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -59,7 +59,7 @@
                     <li><a href="#">One more separated link</a></li>
                   </ul>
                 </li>
-		<li><input type="text" data-provide="typeahead" data-items="12" data-source="["Pete","Gordon","pbinnovations","website","IT","computer","microsoft","hardware","software","coding","javascript","PC"]">  
+		<li><input type="text" data-provide="typeahead" id="search" data-items="12">  
 		</li>
 		<!--<li><input type="text" data-provide="typeahead"></li>-->
               </ul>
@@ -69,7 +69,10 @@
 
       </div>
     </div>
-
+<script>
+ var subjects= ["Pete","Gordon","pbinnovations","website","IT","computer","microsoft","hardware","software","PC"];
+$('#search').typeahead({source: subjects})
+</script>
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
